@@ -54,8 +54,8 @@ h1, h2 {
 }
 
 .project-thumb {
-  width: 40px;   /* 원하는 크기로 조정 */
-  height: 40px;
+  width: 5px;   /* 원하는 크기로 조정 */
+  height: 5px;
   object-fit: cover;
   border-radius: 10px;
   cursor: pointer;
