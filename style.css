@@ -90,8 +90,8 @@ h1, h2 {
     }
 
 .modal-photo {
-  width: 300px;          /* 또는 width: 60%; */
-  max-width: 90%;        /* 화면 작을 때 대비한 반응형 */
+  width: 100px;          /* 또는 width: 60%; */
+  max-width: 30%;        /* 화면 작을 때 대비한 반응형 */
   height: auto;
   display: block;
   margin: 0 auto 15px;
