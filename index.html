@@ -31,63 +31,18 @@
       </ul>
     </section>
 
-
-
     <section id="projects">
-  <h2>프로젝트</h2>
-  <ul>
-    <li class="project-item" onclick="openModal('modal1')"><strong>원 넓이 계산 웹사이트</strong></li>
-    <li class="project-item" onclick="openModal('modal2')"><strong>야옹이와 수프</strong></li>
-    <li class="project-item" onclick="openModal('modal3')"><strong>길이 변환 웹사이트</strong></li>
-    <li class="project-item" onclick="openModal('modal4')"><strong>최대 공약수 계산 웹사이트</strong></li>
-    <li class="project-item" onclick="openModal('modal5')"><strong>온라인 쇼핑몰 (예정)</strong></li>
-  </ul>
+      <h2>프로젝트</h2>
+      <ul>
+        <li><strong>원 넓이 계산 웹사이트</strong> - 웹 언어를 활용한 사이트</li>
+        <li><strong>길이 변환 웹사이트</strong> - 웹 언어를 활용한 사이트</li>
+        <li><strong>최대 공약수 계산 웹사이트</strong> - 웹 언어를 활용한 사이트</li>
+        <li><strong>야옹이와 수프</strong> - C언어 기반 텍스트 게임</li>
+        <li><strong>온라인 쇼핑몰</strong> (예정) - 웹 언어를 활용한 사이트</li>
+      </ul>
+    </section>
 
-  <!-- 모달 1 -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal1')">&times;</span>
-      <h3>원 넓이 계산 웹사이트</h3>
-      <p>HTML, CSS, JavaScript를 이용해 반지름을 입력하면 원의 넓이를 계산하는 웹 앱입니다.</p>
-    </div>
-  </div>
 
-  <!-- 모달 2 -->
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal2')">&times;</span>
-      <h3>야옹이와 수프</h3>
-      <p>C언어 기반 콘솔 게임으로, 고양이의 기분과 행동을 제어하는 시뮬레이션 게임입니다.</p>
-    </div>
-  </div>
-
-  <!-- 모달 3 -->
-  <div id="modal3" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal3')">&times;</span>
-      <h3>길이 변환 웹사이트</h3>
-      <p>cm, m, inch 등 다양한 단위를 서로 변환할 수 있는 웹 기반 변환기입니다.</p>
-    </div>
-  </div>
-
-  <!-- 모달 4 -->
-  <div id="modal4" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal4')">&times;</span>
-      <h3>최대 공약수 계산 웹사이트</h3>
-      <p>두 숫자를 입력하면 최대 공약수를 구해주는 간단한 JavaScript 기반 계산기입니다.</p>
-    </div>
-  </div>
-
-  <!-- 모달 5 -->
-  <div id="modal5" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal5')">&times;</span>
-      <h3>온라인 쇼핑몰 (예정)</h3>
-      <p>사용자 로그인, 상품 목록, 장바구니 기능을 갖춘 온라인 쇼핑몰을 제작할 예정입니다.</p>
-    </div>
-  </div>
-</section>
 
     <section id="career">
       <h2>희망 직무</h2>
@@ -106,28 +61,7 @@
   </main>
 
   <footer>
-    <p>Contact: ohyugyeong04@naver.com | Github: <a href="https://github.com/ohyugyeong" target="_blank">ohyugyeong</a></p>
+    <p>Contact: gildong@example.com | Github: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
   </footer>
-
-<script>
-    function openModal(id) {
-      document.getElementById(id).style.display = "block";
-    }
-
-    function closeModal(id) {
-      document.getElementById(id).style.display = "none";
-    }
-
-    // 클릭 외 영역 눌러서 닫기
-    window.onclick = function(event) {
-      const modals = document.querySelectorAll('.modal');
-      modals.forEach(modal => {
-        if (event.target === modal) {
-          modal.style.display = "none";
-        }
-      });
-    }
-  </script>
-    
 </body>
 </html>
