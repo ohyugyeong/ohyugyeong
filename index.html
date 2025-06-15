@@ -36,14 +36,14 @@
 
     <section id="projects">
   <h2>프로젝트</h2>
-  <ul>
-    <li class="project-item" onclick="openModal('modal1')"><strong>원 넓이 계산 웹사이트</strong></li>
-    <li class="project-item" onclick="openModal('modal2')"><strong>야옹이와 수프</strong></li>
-    <li class="project-item" onclick="openModal('modal3')"><strong>길이 변환 웹사이트</strong></li>
-    <li class="project-item" onclick="openModal('modal4')"><strong>최대 공약수 계산 웹사이트</strong></li>
-    <li class="project-item" onclick="openModal('modal5')"><strong>온라인 쇼핑몰 (예정)</strong></li>
-  </ul>
-
+  <div class="project-gallery">
+    <img src="circle.png" alt="원 넓이 계산" class="project-thumb" onclick="openModal('modal1')">
+    <img src="cat.png" alt="야옹이와 수프" class="project-thumb" onclick="openModal('modal2')">
+    <img src="length.png" alt="길이 변환" class="project-thumb" onclick="openModal('modal3')">
+    <img src="GCD.png" alt="최대공약수 계산" class="project-thumb" onclick="openModal('modal4')">
+    <img src="shop.png" alt="온라인 쇼핑몰" class="project-thumb" onclick="openModal('modal5')">
+  </div>
+      
   <!-- 모달 1 -->
   <div id="modal1" class="modal">
     <div class="modal-content">
