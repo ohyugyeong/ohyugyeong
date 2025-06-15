@@ -53,20 +53,6 @@ h1, h2 {
   color: #0066cc;
 }
 
-.project-thumb {
-  width: 180px;   /* 원하는 크기로 조정 */
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease;
-}
-
-.project-thumb:hover {
-  transform: scale(1.05);  /* 마우스 오버 시 약간 확대 */
-}
-
 .modal {
       display: none;
       position: fixed;
