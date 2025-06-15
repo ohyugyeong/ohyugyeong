@@ -19,7 +19,6 @@ header {
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  float: left;
   margin: 0 200px 20px 0; /* 오른쪽과 아래쪽 여백 */
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
