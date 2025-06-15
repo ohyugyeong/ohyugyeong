@@ -1,8 +1,8 @@
 # 오유경의 이력 홈페이지
 
-> GitHub 주소: https://github.com/oyk2025/oyk2025.github.io
+> GitHub 주소: https://ohyugyeong.github.io/ohyugyeong/
 
-> 배포된 페이지: https://oyk2025.github.io
+> 배포된 페이지: https://github.com/ohyugyeong
 
 ---
 
@@ -47,7 +47,7 @@ Github Pages를 이용하였으며, 아래 항목들을 포함하고 있습니�
 
 ## Github Repository 생성 조건
 
-- 저장소 이름: `oyk2025.github.io`
+- 저장소 이름: `ohyugyong.github.io`
 - 공개 여부: `Public`
 - 초기화: `README.md` 포함
 - 테마 사용: 미사용 (직접 제작)
@@ -62,4 +62,4 @@ Github Pages를 이용하였으며, 아래 항목들을 포함하고 있습니�
 
 ## 🔗 Github Pages 주소
 
-👉 [https://oyk2025.github.io](https://oyk2025.github.io)
+> https://ohyugyeong.github.io/ohyugyeong/
