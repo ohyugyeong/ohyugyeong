@@ -24,12 +24,6 @@ header {
   box-shadow: 0 0 10px rgba(0,0,0,0.2); /* 그림자 효과 */
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 nav a {
   color: white;
   margin: 0 10px;
