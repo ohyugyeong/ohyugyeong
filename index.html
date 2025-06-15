@@ -2,8 +2,52 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>나의 이력 홈페이지</title>
+  <title>오유경의 이력 홈페이지</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- 모달 기본 스타일 --- */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 600px;
+      position: relative;
+    }
+
+    .close {
+      color: #aaa;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: black;
+    }
+
+    .project-item {
+      cursor: pointer;
+      text-decoration: underline;
+      color: blue;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -17,49 +61,59 @@
   </header>
 
   <main>
-    <section id="intro">
-      <h2>자기소개</h2>
-      <img src="photo.jpg" alt="내 사진" class="profile-photo">
-      <p>20230148 영어영문학과 오유경</p>
-    </section>
-
-    <section id="skills">
-      <h2>나의 스킬</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>C, Python</li>
-      </ul>
-    </section>
+    <!-- 중략 -->
 
     <section id="projects">
       <h2>프로젝트</h2>
       <ul>
-        <li><strong>원 넓이 계산 웹사이트</strong> - 웹 언어를 활용한 사이트</li>
-        <li><strong>길이 변환 웹사이트</strong> - 웹 언어를 활용한 사이트</li>
-        <li><strong>최대 공약수 계산 웹사이트</strong> - 웹 언어를 활용한 사이트</li>
-        <li><strong>야옹이와 수프</strong> - C언어 기반 텍스트 게임</li>
-        <li><strong>온라인 쇼핑몰</strong> (예정) - 웹 언어를 활용한 사이트</li>
+        <li class="project-item" onclick="openModal('modal1')"><strong>원 넓이 계산 웹사이트</strong></li>
+        <li class="project-item" onclick="openModal('modal2')"><strong>야옹이와 수프</strong></li>
       </ul>
+
+      <!-- 모달 1 -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <h3>원 넓이 계산 웹사이트</h3>
+          <p>HTML, CSS, JavaScript를 이용하여 사용자가 반지름을 입력하면 원의 넓이를 자동으로 계산해주는 간단한 웹 앱입니다. 학부 웹프로그래밍 수업에서 제작하였습니다.</p>
+        </div>
+      </div>
+
+      <!-- 모달 2 -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <h3>야옹이와 수프</h3>
+          <p>C언어로 만든 콘솔 기반 고양이 육성 시뮬레이션 게임입니다. 상태 출력, 이동, 상호작용, 확률 기반 이벤트 등 다양한 텍스트 기반 시스템을 구현했습니다.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="career">
-      <h2>희망 직무</h2>
-      <p>웹 프론트엔드 개발자, 보안 엔지니어</p>
-    </section>
-
-    <section id="resume">
-      <h2>📄 이력서 다운로드</h2>
-      <a href="resume.pdf" download>👉 이력서 다운로드</a>
-    </section>
-
-    <section id="video">
-      <h2>🎥 자기소개 영상</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/영상ID" frameborder="0" allowfullscreen></iframe>
-    </section>
+    <!-- 이하 생략 -->
   </main>
 
   <footer>
-    <p>Contact: gildong@example.com | Github: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+    <p>Contact: <a href="mailto:gildong@example.com">gildong@example.com</a> | Github: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
   </footer>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    // 클릭 외 영역 눌러서 닫기
+    window.onclick = function(event) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
