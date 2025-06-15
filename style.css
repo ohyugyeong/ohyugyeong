@@ -20,7 +20,9 @@ header {
   object-fit: cover;
   border-radius: 50%;      /* 원형 사진 */
   display: block;
-  margin: 0 auto 20px auto; /* 중앙 정렬 + 아래 여백 */
+  float: left;
+  margin-right: 20px;
+  margin: 20px auto; /* 중앙 정렬 + 아래 여백 */
   box-shadow: 0 0 10px rgba(0,0,0,0.2); /* 그림자 효과 */
 }
 
