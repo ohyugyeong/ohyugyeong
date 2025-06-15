@@ -1,16 +1,81 @@
-## Hi there 👋
+# 오유경의 이력 홈페이지
 
-<!--
-**ohyugyeong/ohyugyeong** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+> 📌 GitHub 주소: https://github.com/oyk2025/oyk2025.github.io
 
-Here are some ideas to get you started:
+> 🌐 배포된 페이지: https://oyk2025.github.io
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 📄 홈페이지 개요
+
+이 사이트는 저 오유경의 이력서를 소개하는 퍼스널 웹페이지입니다. HTML, CSS, JavaScript만을 사용하여 직접 개발하였으며, 외부 테마를 사용하지 않고 **스스로 디자인 및 구현**했습니다. 
+
+Github Pages를 이용해 `oyk2025.github.io` 저장소에 배포하였으며, 아래 항목들을 포함하고 있습니다.
+
+---
+
+## 🛠️ 사용 기술 스택
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+
+---
+
+## ✨ 주요 기능 (기능별 설명 및 코드 위치)
+
+| 기능 제목            | 설명                                                                 | 코드 위치               | 코드 설명                                   |
+|---------------------|----------------------------------------------------------------------|------------------------|---------------------------------------------|
+| 이력서 다운로드      | 사용자가 클릭하여 PDF 이력서를 다운로드 받을 수 있음                  | `#resume` 섹션         | `<a href="resume.pdf" download>` 사용       |
+| 자기소개 영상       | YouTube 링크를 iframe으로 삽입하여 영상 재생 가능                     | `#video` 섹션          | `<iframe src="...">`                        |
+| 프로젝트 상세 설명  | 각 프로젝트를 클릭 시 상세 설명 모달 팝업으로 확인 가능               | `#projects` + `<script>` | `onclick`과 `modal` 요소로 팝업 구현       |
+| 반응형 네비게이션    | 다양한 화면 크기에서 메뉴가 상단 고정되고 섹션으로 이동됨             | `<header>`, `<nav>`     | anchor 링크 및 CSS 스타일링 적용            |
+
+---
+
+## 👩‍💻 나의 스킬 (0~2점)
+
+- HTML, CSS, JavaScript
+- C, Python
+
+---
+
+## 💼 프로젝트 (0~3점)
+
+1. **원 넓이 계산 웹사이트** - 웹 언어를 활용한 실습용 계산기 사이트
+2. **길이 변환 웹사이트** - 웹 언어로 구현한 변환 도구
+3. **최대공약수 계산 웹사이트** - JavaScript 기반 수학 계산 도구
+4. **야옹이와 수프** - C언어 기반 고양이 육성 콘솔 게임
+5. **온라인 쇼핑몰 (예정)** - HTML/CSS 기반 쇼핑몰 UI 예정 프로젝트
+
+---
+
+## 🧑‍🎓 희망 직무 (0~2점)
+
+- 웹 프론트엔드 개발자
+- 보안 엔지니어
+
+---
+
+## 📌 Github Repository 생성 조건
+
+- 저장소 이름: `oyk2025.github.io`
+- 공개 여부: `Public`
+- 초기화: `README.md` 포함
+- 테마 사용: ❌ 미사용 (직접 제작) ✅ **추가점수 대상**
+
+---
+
+## 🎯 제출물 목록
+
+- [x] `README.md` 파일  
+- [x] 이력서 PDF (`resume.pdf`)
+- [x] 프로젝트 상세 모달 기능
+- [x] 자기소개 영상 포함
+- [x] Github Pages로 배포된 홈페이지
+
+---
+
+## 🔗 Github Pages 주소
+
+👉 [https://oyk2025.github.io](https://oyk2025.github.io)
